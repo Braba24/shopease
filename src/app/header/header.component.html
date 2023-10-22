@@ -1,0 +1,18 @@
+<header>
+  <div class="mobile-menu sp-bt al-cen">    
+    <div class="logo-banner">
+      <a href="#" class="logo"><img src="./assets/images/logo.png" alt="ShopEase"></a>
+    </div>
+    <div class="menu-icon">
+      <img src="./assets/icons/menu-icon.png" alt="menu" [ngClass]="{'hide': isMenuVisible}" id="menuOpen" (click)="showMenu()">
+      <img src="./assets/icons/close-icon.png" alt="close" [ngClass]="{'show': isMenuVisible, 'hide':!isMenuVisible}" (click)="closeMenu()">
+    </div>
+  </div>
+  <div class="menu-bar sp-bt al-cen">
+    <div class="logo-banner">
+      <a href="#" class="logo"><img src="./assets/images/logo.png" alt="ShopEase"></a>
+    </div>
+    <app-menu-links class="menu-list sp-ar"></app-menu-links>
+  </div>
+</header>
+<app-menu-links *ngIf="isMenuVisible" class="mobile-menu-list"></app-menu-links>

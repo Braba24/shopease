@@ -1,0 +1,87 @@
+.card-banner {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #efefef;
+    box-shadow: 0 0 2px 0 #ffbe68;
+    border-radius: 5px;
+}
+
+.card-banner:hover {
+    
+}
+
+.card-top {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+}
+
+.card-hover {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    padding: 5px;
+    background: rgb(255 255 255);
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    display: none;    
+    overflow: hidden;
+    .no-data{
+        padding: 20px;
+    }
+    @media screen and (min-width: 360px) { 
+        font-size: 10px;
+    }    
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+    } 
+    @media screen and (min-width: 1024px) {
+
+    } 
+}
+
+.feature-row {
+    display: flex;
+    border-bottom: 1px solid #cccccc61;
+}
+
+.feature-box {    
+    width: 100%;
+    height: 100%;
+}
+
+.left-div, .right-div {
+    width: 50%;
+    padding: 5px 0;
+}
+
+.card-banner:hover{
+    background: #87aae5;
+    .card-hover {
+        display: block;
+    }    
+}
+
+.card-bottom {
+    height: 30%;
+    font-weight: 600;
+    p {
+        padding: 5px 10px;
+    }
+    .addtocart-btn {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ffbe68;
+        background-color: #ffbe68;    
+        border-radius: 5px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}

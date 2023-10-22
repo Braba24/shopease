@@ -1,0 +1,88 @@
+.product-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.filter-row{
+    justify-content: space-between;
+    @media screen and (min-width: 360px) { 
+
+    }
+    @media screen and (min-width: 768px) {        
+        display: flex;
+    } 
+    @media screen and (min-width: 1024px) {
+
+    } 
+}
+
+@mixin productTileSize(){            
+    width: 220px;
+    height: 30px;
+}
+.select-box{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    @media screen and (max-width: 767px) { 
+        
+    }    
+    @media screen and (min-width: 768px) {        
+        @include productTileSize;
+    } 
+}
+.search-box{
+    position: relative;
+    input{
+        width: 100%;
+        padding: 5px 20px 5px 5px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+    }
+    img{
+        position: absolute;
+        width: 16px;
+        top: 5px;
+        right: 3px;
+        opacity: .5;
+        transform: translateX(-30%) translateY(-50%);
+        top: 50%;
+        right: 0;
+    }
+    @media screen and (max-width: 767px) { 
+        
+    }    
+    @media screen and (min-width: 768px) {        
+        @include productTileSize;
+    } 
+}
+
+.search-box, .select-box{
+    padding: 5px 0;
+}
+
+.products-row {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    .product-card {
+        padding: 5px;
+        float: left;
+        @media screen and (max-width: 519px) { 
+            width: 100%;
+        } 
+
+        @media screen and (min-width: 520px) { 
+            width: 50%;
+        } 
+        
+        @media screen and (min-width: 768px) {
+            width: 33%;
+        } 
+        
+        @media screen and (min-width: 1024px){
+            width: 25%;
+        }
+    }    
+}

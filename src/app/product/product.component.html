@@ -1,0 +1,25 @@
+<div class="card-banner">
+    <div class="card-top">
+        <img [src]="product?.imageUrl ? product?.imageUrl : placeHolderImg" alt="img">
+        <div class="card-hover">
+            <div *ngIf="product?.otherInfo;else noData" class="feature-box">
+                <div class="feature-row">
+                    <div class="left-div">More Details :</div>
+                </div>
+                <div *ngFor="let feature of product?.otherInfo" class="feature-row">
+                    <div class="left-div">{{feature?.name}}</div>
+                    <div class="right-div">{{feature?.value}}</div>
+                </div>
+            </div>
+            <ng-template #noData>
+                <div class="no-data">Features not available for this product!. </div>
+            </ng-template>
+        </div>
+        
+    </div>
+    <div class="card-bottom">
+        <p>{{product?.productName}}</p>
+        <p>{{product?.price | currency:'INR':'symbol-narrow'}}</p>
+        <button id="add-to-cart" class="addtocart-btn" (click)="addToCart()">Add to Cart</button>                
+    </div>
+</div>

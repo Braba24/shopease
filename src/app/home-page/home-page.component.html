@@ -1,0 +1,12 @@
+<section class="home-container">
+    <div class="category-panel">
+        <div class="category-tile" *ngFor="let category of categoryList" [routerLink]="category?.path ? category.path : '' ">
+            <div class="tile-top">
+                <img [src]="category?.imgUrl ? category?.imgUrl : ''">
+            </div>
+            <div class="tile-bottom">
+                <span>{{category?.name | uppercase}}</span>
+            </div>
+        </div> 
+    </div>
+</section>

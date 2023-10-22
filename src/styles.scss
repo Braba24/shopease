@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+$font-stack: sans-serif;
+$primary-color: #4b77c2;
+$secondary-color: #4b70c2;
+$font-color: #444;
+$flex: flex;
+$block: block;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font: 14px $font-stack;
+    color: $font-color;
+}
+
+header , footer{
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
