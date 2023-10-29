@@ -21,6 +21,7 @@ Sub Modules :
   2. Product-pages
   
 There are two main modules present in our application.
+
   1.Home Modules
   	- Contains a category of products with basic design and layout.
   	- This is mapped as main router in AppRouterModule, all empty URL hits will be redirected to '/home' path.
